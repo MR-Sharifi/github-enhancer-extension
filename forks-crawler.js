@@ -1,19 +1,24 @@
-function getInformation(repositotyUrl) {
-    console.log('information fetched from ' + repositotyUrl);
+function getInformation(repositoryUrl) {
+    console.log('information fetched from ' + repositoryUrl);
 }
 
-for (repo of document.getElementsByClassName("repo")) {
-    let repositotyUrl = repo.querySelector("a:last-child").href;
+let allRepositories = document.getElementsByClassName("repo");
+for (let index = 0; index < allRepositories.length; index++) {
+    if (index === 0) {
+        continue;
+    }
+
+    let repoElement = allRepositories[index];
+
+    let repositoryUrl = repoElement.querySelector("a:last-child").href;
 
     let button = document.createElement("button");
     button.innerHTML = "Get Information";
     button.type = "button";
     button.className = "Label Label--success";
     button.onclick = function () {
-        getInformation(repositotyUrl)
+        getInformation(repositoryUrl)
     };
 
-    repo.appendChild(button);
+    repoElement.appendChild(button);
 }
-
-console.log('finished');
