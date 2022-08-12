@@ -1,6 +1,6 @@
 # Github Crawler Extension
 
-This browser extension retrive information from Github repositories by crawling current Github repository and other related Github Repositories.
+This browser extension retrieve information from GitHub repositories by crawling current GitHub repository and other related GitHub Repositories.
 
 You can download this add-on from following links:
 

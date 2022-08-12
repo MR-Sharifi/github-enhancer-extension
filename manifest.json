@@ -1,6 +1,6 @@
 {
     "name": "Github Crawler",
-    "description": "This extentsion crawl github repositories and get additional information from them.!",
+    "description": "This browser extension retrieve information from GitHub repositories by crawling current GitHub repository and other related GitHub Repositories.",
     "version": "0.1",
     "manifest_version": 2,
 
