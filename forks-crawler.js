@@ -5,15 +5,19 @@ class GithubRepository {
 
     getInformation() {
         let information = document.createElement("span");
-        information.className = "flash";
+        information.className = "flash mx-1";
         information.style.padding = "2px 10px"
 
-        let starInformation = document.createElement("span");
-        starInformation.textContent = this.star;
-
-        information.appendChild(starInformation);
+        information.appendChild(this.prepareStarInformation());
 
         return information;
+    }
+
+    prepareStarInformation() {
+        let starInformation = document.createElement("span");
+        starInformation.textContent = "Star: " + this.star;
+
+        return starInformation;
     }
 }
 
