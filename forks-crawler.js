@@ -1,23 +1,38 @@
 class GithubRepository {
     constructor(repositoryDOM) {
         this.star = repositoryDOM.getElementById("repo-stars-counter-star").textContent;
+        this.watch = repositoryDOM.getElementById("repo-notifications-counter").textContent;
+    }
+
+    getInformationTemplate() {
+        let informationTemplate = document.createElement("span");
+        informationTemplate.className = "flash mr-1";
+        informationTemplate.style.padding = "2px 10px";
+
+        return informationTemplate;
     }
 
     getInformation() {
         let information = document.createElement("span");
-        information.className = "flash mx-1";
-        information.style.padding = "2px 10px"
 
         information.appendChild(this.prepareStarInformation());
+        information.appendChild(this.prepareWatchInformation());
 
         return information;
     }
 
     prepareStarInformation() {
-        let starInformation = document.createElement("span");
+        let starInformation = this.getInformationTemplate();
         starInformation.textContent = "Star: " + this.star;
 
         return starInformation;
+    }
+
+    prepareWatchInformation() {
+        let watchInformation = this.getInformationTemplate();
+        watchInformation.textContent = "Watch: " + this.watch;
+
+        return watchInformation;
     }
 }
 
