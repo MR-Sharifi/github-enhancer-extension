@@ -5,8 +5,11 @@
     "manifest_version": 2,
 
     "icons": {
-        "48": "icons/crawler-48.png",
-        "225": "icons/crawler-225.png"
+        "32": "icons/github-enhancer-32.png",
+        "48": "icons/github-enhancer-48.png",
+        "64": "icons/github-enhancer-64.png",
+        "128": "icons/github-enhancer-128.png",
+        "512": "icons/github-enhancer-512.png"
     },
 
     "content_scripts": [
