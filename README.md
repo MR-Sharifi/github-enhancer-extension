@@ -4,5 +4,5 @@ This browser extension retrieve information from GitHub repositories by crawling
 
 You can download this add-on from following links:
 
-- [Mozilla Firefox Browser extension](https://addons.mozilla.org/)
+- [Mozilla Firefox Browser extension](https://addons.mozilla.org/en-US/firefox/addon/github-enhancer/)
 - [Google Chrome extension](https://chrome.google.com/webstore)
